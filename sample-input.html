@@ -20,21 +20,17 @@
 
 <script> 
 
-function checkGuess (){
+function resolveForm (){
     console.log("Getting form values")
     age = document.getElementById("form1_age").value
     nick = document.getElementById("form1_nick").value
     confirmed = confirm("Are these the values? "+age+" and "+nick)
     
     out = document.getElementById("result")
-    if(age==nick){
-        alert("You got it right")
-        correct = correct+1
-        out.innerHTML = "correct answer:"+ correct +"wrong answer:"+ wrong
+    if(confirmed){
+        out.innerHTML = "Values were confirmed"
     } else {
-        alert("Wrong musician")
-        wrong = wrong+1
-        out.innerHTML ="correct answer:"+ correct + "wrong answer:"+ wrong
+        out.innerHTML = "Values were confirmed" 
     }
 }
 </script>
