@@ -46,6 +46,36 @@
         }
     }
     </script>
-    
+
+
+    <div class="container">
+        <img src="Roach.jpg" class="bordered mx-auto d-block" width="100px" height="100px" alt="Roach" id="images" onclick="swapImage()">
+    </div>
+    <script>
+        let useImage = 1
+        function swapImage(){
+        switch(useImage){
+            case 1:
+                document.getElementById("images").src="Roach.jpg";
+                useImage+=1;
+                break;
+                case 2:
+                document.getElementById("images").src="inchworm.jpg";
+                useImage+=1;
+                break;
+                case 3:
+                document.getElementById("images").src="venomous spider.jpg";
+                useImage=1;
+                break;
+            }
+        }
+    </script>
+    <div class="container">
+        <ul class="pager">
+            <li class="next">
+                <a href="discount.html">Discount Page</a>
+            </li>
+        </ul>
+    </div>
     </body>
     </html> 
