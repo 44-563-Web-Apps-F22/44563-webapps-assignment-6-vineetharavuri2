@@ -18,7 +18,7 @@
         <label for="form1_nick">Guess the musician </label>
         <input type ="text" id="form1_nick" name="form1_nick" autofocus> <br>
     
-        <input type="button" onclick="checkGuess()" value="Check the guess">
+        <input type="button" onclick="checkGuess();endoftheGame()" value="Check the guess">
     </form>
     
     
@@ -38,6 +38,7 @@
         if(age==nick){
             alert("You got it right")
              correct = correct+1
+             count=0
             out.innerHTML = "correct answer:"+ correct +"wrong answer:"+ wrong
         } else {
             alert("Wrong musician")
@@ -75,8 +76,8 @@
         {
             
             while (wrong==3) {
-                if (wrong >=3) {
-                    wrong -= 4
+                if (wrong >=3){
+                    wrong -=4
                     alert("Sorry, game over.")
                 }
                 else {
