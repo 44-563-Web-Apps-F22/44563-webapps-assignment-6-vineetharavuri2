@@ -70,6 +70,25 @@
             }
         }
     </script>
+    <script>
+        function endoftheGame()
+        {
+            
+            while (wrong==3) {
+                if (wrong >=3) {
+                    wrong -= 4
+                    alert("Sorry, game over.")
+                }
+                else {
+                    alert("You got it right")
+                    document.getElementById("result").innerHTML = "Correct count:" + correct + " " + "Wrong count:" + wrong
+                }
+           
+                }
+
+            }
+        
+        </script>
     
     </body>
     </html> 
